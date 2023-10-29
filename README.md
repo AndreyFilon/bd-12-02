@@ -8,13 +8,11 @@
 
 1.3. Выполните запрос на получение списка пользователей в базе данных. (скриншот)
 ![SELECT User](https://github.com/AndreyFilon/bd-12-02/blob/main/1.3-list%20users.jpg)
-
 1.4. Дайте все права для пользователя sys_temp.
 
 1.5. Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)
 ![SELECT grand](https://github.com/AndreyFilon/bd-12-02/blob/main/1.5-privil1.jpg)
 ![SELECT grand](https://github.com/AndreyFilon/bd-12-02/blob/main/1.5-privil2.jpg)  
-
 1.6. Переподключитесь к базе данных от имени sys_temp.
 
 Для смены типа аутентификации с sha2 используйте запрос:
@@ -30,17 +28,17 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 Результатом работы должны быть скриншоты обозначенных заданий, а также простыня со всеми запросами.
 ![SELECT tables](https://github.com/AndreyFilon/bd-12-02/blob/main/table.jpg)  
 Listing  
-1. Вход в MySQL
+1. Вход в MySQL  
 mysql -u root -p
-2. Создание пользователя
+2. Создание пользователя  
 CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY '1';
-3. Запрос на получение списка пользователей в базе данных
+3. Запрос на получение списка пользователей в базе данных  
 SELECT host, user, password_expired FROM mysql.user;
-4. Даем все права для пользователя sys_temp
+4. Даем все права для пользователя sys_temp  
 GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost';
-5. Запрос на получение списка прав для пользователя sys_temp
+5. Запрос на получение списка прав для пользователя sys_temp  
 SHOW GRANTS FOR 'sys_temp'@'localhost';
-6. Обновляем таблицы прав пользователей
+6. Обновляем таблицы прав пользователей  
 FLUSH PRIVILEGES;
 
 

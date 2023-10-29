@@ -8,6 +8,7 @@
 
 1.3. Выполните запрос на получение списка пользователей в базе данных. (скриншот)
 ![SELECT User](https://github.com/AndreyFilon/bd-12-02/blob/main/1.3-list%20users.jpg)
+
 1.4. Дайте все права для пользователя sys_temp.
 
 1.5. Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)
@@ -27,7 +28,8 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 
 Результатом работы должны быть скриншоты обозначенных заданий, а также простыня со всеми запросами.
 ![SELECT tables](https://github.com/AndreyFilon/bd-12-02/blob/main/table.jpg)  
-Listing  
+
+Listing  commands:
 1. Вход в MySQL  
 mysql -u root -p
 2. Создание пользователя  

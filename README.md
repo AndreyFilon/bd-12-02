@@ -52,63 +52,21 @@ FLUSH PRIVILEGES;
 Название таблицы | Название первичного ключа
 customer         | customer_id
 ```
-### Ответ
 
-
-
-
-#### 1) Таблица Сотрудники  (исправлено)  
-
-Идентификатор, PRIMARY KEY, INT, NOT NULL, AUTO_INCREMENT  
-Фамилия, VARCHAR(30), NOT NULL  
-Имя, VARCHAR(30), NOT NULL  
-Отчество, VARCHAR(30), NOT NULL  
-Адрес, VARCHAR(150), NOT NULL  
-Идентификатор должности, FOREIGN KEY, INT, NOT NULL
-Идентификатор проекта, FOREIGN KEY, INT, NOT NULL
-Идентификатор структурного подразделения, FOREIGN KEY, INT, NOT NULL  
-
-#### 2) Таблица Структурные подразделения   (исправлено)  
-
-Идентификатор, PRIMARY KEY, INT, NOT NULL, AUTO_INCREMENT  
-Наименование подразделения, VARCHAR(60), NOT NULL   
-Идентификатор Тип подразделения, FOREIGN KEY, INT, NOT NULL  
-
-#### 3) Таблица Должности   
-
-Идентификатор, PRIMARY KEY, INT, NOT NULL, AUTO_INCREMENT  
-Наименование, VARCHAR(60), NOT NULL  
-Оклад, DECIMAL(10,2), NOT NULL   
-
-#### 4) Таблица Тип подразделения  
-
-Идентификатор, PRIMARY KEY, INT, NOT NULL, AUTO_INCREMENT  
-Наименование, varchar(50), not null  
-
-#### 5) Таблица Область  
-
-Идентификатор, PRIMARY KEY, INT, NOT NULL, AUTO_INCREMENT  
-Наименование, VARCHAR(50), NOT NULL 
-
-#### 6) Таблица Город  
-
-Идентификатор, PRIMARY KEY, INT, NOT NULL, AUTO_INCREMENT  
-Наименование, VARCHAR(50), NOT NULL  
-
-#### 7) Таблица Адрес  
-
-Идентификатор, PRIMARY KEY, INT, NOT NULL, AUTO_INCREMENT  
-Наименование, VARCHAR(200), NOT NULL   
- 
-#### 8) Таблица  Адрес филиала  
-
-Идентификатор области, FOREIGN KEY, INT, NOT NULL  
-Идентификатор города, FOREIGN KEY, INT, NOT NULL  
-Идентификатор адреса, FOREIGN KEY, INT, NOT NULL  
-
-#### 9) Таблица  Проекты
-
-Идентификатор, PRIMARY KEY, INT, NOT NULL, AUTO_INCREMENT  
-Наименование, VARCHAR(200), NOT NULL  
-
+actor		|	actor_id
+address		|	address_id
+category	|	category_id
+city		|	city_id
+country		|	country_id
+customer	|	customer_id
+film		|	film_id
+film_actor	|	actor_id, film_id
+film_category 	|	film_id, category_id 
+film_text 	|	film_id
+inventory 	|	inventory_id
+language 	|	language_id
+payment 	|	payment_id
+rental 		| 	rental_id
+staff 		|	staff_id
+store 		|	store_id
 ---
